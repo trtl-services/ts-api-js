@@ -1,0 +1,32 @@
+{
+  "name": "trtl-service-js",
+  "version": "0.1.0",
+  "description": "TRTL Service API Interface in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fexra/trtl-services-js.git"
+  },
+  "keywords": [
+    "TurtleCoin",
+    "TRTL",
+    "TRTL Service",
+    "RCP API"
+  ],
+  "author": "Fexra <brandonlehmann@gmail.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fexra/trtl-services-js/issues"
+  },
+  "homepage": "https://github.com/fexra/trtl-services-js#readme",
+  "dependencies": {
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
