@@ -1,4 +1,4 @@
-# TRTL Service API Interface
+# TRTL Service JS API Interface
 
 This wrapper allows you to easily interact with the [TRTL Services](https://trtl.services) API to quickly develop applications within the [TurtleCoin](https://turtlecoin.lol) Project. This entire project uses [Javascript Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) to make things fast, easy, and safe.
 
