@@ -1,5 +1,5 @@
 {
-  "name": "ts-api",
+  "name": "ts-api-js",
   "version": "0.1.0",
   "description": "Node.JS wrapper for TRTL Servicea RESTFUL API.",
   "main": "index.js",
@@ -11,14 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/trtl-services/ts-api-js.git"
   },
-  "keywords": [
-    "TRTL Services",
-    "TurtleCoin",
-    "TRTL",
-    "Cryptocurrency",
-    "CryptoNote"
-  ],
-  "author": "Fexra <fexra@protonmail.com>",
+  "keywords": ["TRTL Services", "TurtleCoin", "TRTL", "Cryptocurrency", "CryptoNote"],
+  "author": "fexra <fexra@protonmail.com>",
+
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/trtl-services/ts-api-js/issues"
