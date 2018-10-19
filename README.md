@@ -35,6 +35,8 @@ const connect = new TRTLServices({
 
 API documentation is available at https://trtl.services/documentation
 
+##Methods
+
 ###createAddress()
 Create a new TRTL addresses
 
