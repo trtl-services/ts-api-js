@@ -35,9 +35,10 @@ const connect = new TRTLServices({
 
 API documentation is available at https://trtl.services/documentation
 
-##Methods
 
-###createAddress()
+## Methods
+
+### createAddress()
 Create a new TRTL addresses
 
 ```javascript
@@ -45,7 +46,7 @@ TRTLServices.createAddress()
 ```
 
 
-###deleteAddress(address)
+### deleteAddress(address)
 Delete a selected TRTL addresses
 
 ```javascript
@@ -53,14 +54,14 @@ TRTLServices.deleteAdddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuh
 ```
 
 
-###ViewAddress()
+### ViewAddress()
 Get address details by address
 ```javascript
 TRTLServices.viewAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
 ```
 
 
-###viewAddresses()
+### viewAddresses()
 View all addresses belonging to the specified token.
 
 ```javascript
@@ -68,7 +69,7 @@ TRTLServices.viewAddresses()
 ```
 
 
-###scanAddress()
+### scanAddress()
 Scan for transactions in the next 100 blocks specified by blockIndex and address.
 
 ```javascript
@@ -76,7 +77,7 @@ TRTLServices.scanAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVU
 ```
 
 
-###getFee()
+### getFee()
 Calculate the TRTL Services fee for a specified TRTL amount.
 
 ```javascript
@@ -84,14 +85,14 @@ TRTLServices.getFee(1092.19)
 ```
 
 
-###createTransfer()
+### createTransfer()
 Send a TRTL transaction with a specified account.
 
 ```javascript
 TRTLServices.createTransfer("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A", "TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP", 1000, 1)
 ```
 
-###viewTransfer()
+### viewTransfer()
 Lists transaction details with specified hash.
 
 ```javascript
@@ -99,7 +100,7 @@ TRTLServices.viewTransfer("EohMUzR1DELyeQM9RVVwpmn5Y1DP0lh1b1ZpLQrfXQsgtvGHnDdJS
 ```
 
 
-###getStatus()
+### getStatus()
 Get the current status of the TRTL Services infrastructure.
 
 ```javascript
