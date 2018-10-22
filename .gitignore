@@ -2,4 +2,3 @@
 .env
 .env.save
 .git
-package-lock.json
