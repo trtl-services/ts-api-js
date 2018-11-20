@@ -147,3 +147,11 @@ Get the current status of the TRTL Services infrastructure.
 ```javascript
 TS.getStatus()
 ```
+
+# License
+
+```
+Copyright (C) 2018 Fexra, The TurtleCoin Developers
+
+Please see the included LICENSE file for more information.
+```
