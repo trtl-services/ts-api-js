@@ -42,14 +42,14 @@ API documentation is available at https://trtl.services/docs
 Create a new TRTL addresses
 
 ```javascript
-$TS->createAddress()
+TS.createAddress()
 ```
 
 
 ### getAddress(address)
 Get address details by address
 ```javascript
-$TS->getAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
+TS.getAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
 ```
 
 
@@ -57,7 +57,7 @@ $TS->getAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9k
 Delete a selected TRTL addresses
 
 ```javascript
-$TS->deleteAdddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
+TS.deleteAdddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
 ```
 
 
@@ -65,7 +65,7 @@ $TS->deleteAdddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK9
 View all addresses belonging to the specified token.
 
 ```javascript
-$TS->getAddresses()
+TS.getAddresses()
 ```
 
 
@@ -73,7 +73,7 @@ $TS->getAddresses()
 Scan an address for transactions between a 100 block range starting from the specified blockIndex.
 
 ```javascript
-$TS->scanAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A", 899093)
+TS.scanAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A", 899093)
 ```
 
 
@@ -81,7 +81,7 @@ $TS->scanAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9
 Get the public and secret spend key of an address.
 
 ```javascript
-$TS->getAddressKeys("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
+TS.getAddressKeys("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
 ```
 
 
@@ -89,7 +89,7 @@ $TS->getAddressKeys("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK9
 Create an integrated address with an address and payment ID.
 
 ```javascript
-$TS->integrateAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A", "7d89a2d16365a1198c46db5bbe1af03d2b503a06404f39496d1d94a0a46f8804")
+TS.integrateAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A", "7d89a2d16365a1198c46db5bbe1af03d2b503a06404f39496d1d94a0a46f8804")
 ```
 
 
@@ -97,7 +97,7 @@ $TS->integrateAddress("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9t
 Create an integrated address with an address and payment ID.
 
 ```javascript
-$TS->getIntegratedAddresses("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
+TS.getIntegratedAddresses("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A")
 ```
 
 
@@ -105,7 +105,7 @@ $TS->getIntegratedAddresses("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuh
 Calculate the TRTL Services fee for an amount specified in TRTL with two decimal points.
 
 ```javascript
-$TS->getFee(1092.19)
+TS.getFee(1092.19)
 ```
 
 
@@ -113,7 +113,7 @@ $TS->getFee(1092.19)
 Send a TRTL transaction with an address with the amount specified two decimal points.
 
 ```javascript
-$TS->createTransfer(
+TS.createTransfer(
   "TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A",
   "TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP",
   1000.01,
@@ -129,7 +129,7 @@ $TS->createTransfer(
 Get a transaction details specified by transaction hash.
 
 ```javascript
-$TS->getTransfer("EohMUzR1DELyeQM9RVVwpmn5Y1DP0lh1b1ZpLQrfXQsgtvGHnDdJSG31nX2yESYZ")
+TS.getTransfer("EohMUzR1DELyeQM9RVVwpmn5Y1DP0lh1b1ZpLQrfXQsgtvGHnDdJSG31nX2yESYZ")
 ```
 
 
@@ -137,7 +137,7 @@ $TS->getTransfer("EohMUzR1DELyeQM9RVVwpmn5Y1DP0lh1b1ZpLQrfXQsgtvGHnDdJSG31nX2yES
 Get wallet container info and health check.
 
 ```javascript
-$TS->getWallet()
+TS.getWallet()
 ```
 
 
@@ -145,5 +145,5 @@ $TS->getWallet()
 Get the current status of the TRTL Services infrastructure.
 
 ```javascript
-$TS->getStatus()
+TS.getStatus()
 ```
