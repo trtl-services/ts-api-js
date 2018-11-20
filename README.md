@@ -15,7 +15,7 @@ This wrapper allows you to easily interact with the [TRTL Services](https://trtl
 # Installation
 
 ```bash
-npm install -g ts-api-js
+npm i --save ts-api-js
 ```
 
 
@@ -109,21 +109,29 @@ $TS->getFee(1092.19)
 ```
 
 
-### createTransfer()
+### createTransfer(sender, receiver, amount, fee, paymentId, extra)
 Send a TRTL transaction with an address with the amount specified two decimal points.
 
 ```javascript
-$TS->createTransfer("TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A", "TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP", 1000.01, 1.2, "7d89a2d16365a1198c46db5bbe1af03d2b503a06404f39496d1d94a0a46f8804", "3938f915a11582f62d93f82f710df9203a029f929fd2f915f2701d947f920f99")
+$TS->createTransfer(
+  "TRTLuxH78akDMCsXycnU5HjJE6zPCgM4KRNNQSboqh1yiTnvxuhNVUL9tK92j9kurSKdXVHFmjSRkaNBxM6Nb3G8eQGL7aj113A",
+  "TRTLuzAzNs1E1RBFhteX56A5353vyHuSJ5AYYQfoN97PNbcMDvwQo4pUWHs7SYpuD9ThvA7AD3r742kwTmWh5o9WFaB9JXH8evP",
+  1000.01,
+  1.2,
+  "7d89a2d16365a1198c46db5bbe1af03d2b503a06404f39496d1d94a0a46f8804",
+  "3938f915a11582f62d93f82f710df9203a029f929fd2f915f2701d947f920f99"
+)
 ```
 #### You can leave the last two fields (paymentId and extra) blank.
 
 
-### getransfer()
+### getTransfer(address)
 Get a transaction details specified by transaction hash.
 
 ```javascript
-$TS->viewTransfer("EohMUzR1DELyeQM9RVVwpmn5Y1DP0lh1b1ZpLQrfXQsgtvGHnDdJSG31nX2yESYZ")
+$TS->getTransfer("EohMUzR1DELyeQM9RVVwpmn5Y1DP0lh1b1ZpLQrfXQsgtvGHnDdJSG31nX2yESYZ")
 ```
+
 
 ### getWallet()
 Get wallet container info and health check.
