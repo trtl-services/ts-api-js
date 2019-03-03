@@ -1,7 +1,7 @@
 {
   "name": "ts-api-js",
   "version": "0.9.1",
-  "description": "Node.JS wrapper for TRTL Servicea RESTFUL API.",
+  "description": "Node.JS wrapper for TRTL Services RESTFUL API.",
   "main": "index.js",
   "scripts": {
     "start": "node index",
